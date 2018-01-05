@@ -38,4 +38,15 @@ public class EventTest {
         test.entertainment = "Band";
         assertEquals("Pizza", event.getFood(test));
     }
+    @Test
+    public void Event_getDrink() {
+        Event event = new Event();
+        Event test = new Event();
+        test.name = "Test Event Name";
+        test.guests = 3;
+        test.food = "Pizza";
+        test.drinks = "Coffee";
+        test.entertainment = "Band";
+        assertEquals("Coffee", event.getDrink(test));
+    }
 }
