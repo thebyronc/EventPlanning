@@ -20,10 +20,12 @@ public class Event {
         return drink;
     }
     public static String getEntertainment(Event event) {
-        return "";
+        String entertainment = event.entertainment;
+        return entertainment;
     }
     public static String getEventName(Event event) {
-        return "";
+        String name = event.name;
+        return name;
     }
     public static String checkUserResponse(String userInput) {
         String input = userInput.toLowerCase();
