@@ -8,15 +8,16 @@ public class Event {
     public String entertainment;
 
     public static int getGuests(Event event) {
-        int numberOfGuests = event.guests;
-        return numberOfGuests;
+        int guests = event.guests;
+        return guests;
     }
     public static String getFood(Event event) {
         String food = event.food;
         return food;
     }
     public static String getDrink(Event event) {
-        return "";
+        String drink = event.drinks;
+        return drink;
     }
     public static String checkUserResponse(String userInput) {
         String input = userInput.toLowerCase();
