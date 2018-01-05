@@ -2,6 +2,7 @@ package models;
 
 public class Event {
     public static String checkUserResponse(String userInput) {
-        return "";
+        String input = userInput.toLowerCase();
+        return input;
     }
 }
