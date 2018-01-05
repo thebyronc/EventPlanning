@@ -71,4 +71,15 @@ public class EventTest {
         test.entertainment = "Band";
         assertEquals("Test Event Name", event.getEventName(test));
     }
+    @Test
+    public void Event_calculateCost() {
+        Event event = new Event();
+        Event test = new Event();
+        test.name = "Test Event Name";
+        test.guests = 3;
+        test.food = "Pizza";
+        test.drinks = "Coffee";
+        test.entertainment = "Band";
+        assertEquals(130, event.calculateCost(test));
+    }
 }

@@ -27,6 +27,13 @@ public class Event {
         String name = event.name;
         return name;
     }
+    public static int calculateCost(Event event) {
+        int guests = getGuests(event);
+        String food = getFood(event);
+        String drinks = getDrink(event);
+        int totalCost = 1;
+        return totalCost;
+    }
     public static String checkUserResponse(String userInput) {
         String input = userInput.toLowerCase();
         switch (input) {
