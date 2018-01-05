@@ -21,7 +21,7 @@ public class EventTest {
         Event test = new Event();
         test.name = "Test Event Name";
         test.guests = 3;
-        test.drinks = "Pizza";
+        test.food = "Pizza";
         test.drinks = "Coffee";
         test.entertainment = "Band";
         assertEquals(3, event.getGuests(test));

@@ -8,7 +8,8 @@ public class Event {
     public String entertainment;
 
     public static int getGuests(Event event) {
-        return 2;
+        int numberOfGuests = event.guests;
+        return numberOfGuests;
     }
     public static String checkUserResponse(String userInput) {
         String input = userInput.toLowerCase();
