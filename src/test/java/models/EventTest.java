@@ -82,4 +82,16 @@ public class EventTest {
         test.entertainment = "Band";
         assertEquals(230, event.calculateCost(test));
     }
+    @Test
+    public void Event_useCoupons() {
+        Event event = new Event();
+        Event test = new Event();
+        test.name = "Test Event Name";
+        test.guests = 3;
+        test.food = "Pizza";
+        test.drinks = "Coffee";
+        test.entertainment = "Band";
+        assertEquals(230, event.calculateCost(test));
+    }
+
 }
