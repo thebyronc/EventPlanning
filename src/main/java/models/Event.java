@@ -10,7 +10,7 @@ public class Event {
     public String food;
     public String drinks;
     public String entertainment;
-    public String[] validCoupons = {"FreeDJ", "25Off"};
+
     public static int getGuests(Event event) {
         int guests = event.guests;
         return guests;
@@ -64,6 +64,15 @@ public class Event {
         }
     }
     public static int useCoupons(Event event, String[] coupons) {
-        return 0;
+
+        int totalCost = calculateCost(event);
+        for (int i = 0; i < coupons.length; i++){
+            if(coupons[i].equals("FreeDJ")){
+                totalCost -= 200;
+            } else if(coupons[i].equals("25Off")) {
+                totalCost -= 25;
+            } else {}
+        }
+        return totalCost;
     }
 }

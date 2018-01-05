@@ -80,7 +80,7 @@ public class EventTest {
         test.food = "Pizza";
         test.drinks = "Coffee";
         test.entertainment = "Band";
-        assertEquals(5, event.calculateCost(test));
+        assertEquals(230, event.calculateCost(test));
     }
     @Test
     public void Event_useCoupons() {
@@ -92,7 +92,7 @@ public class EventTest {
         test.drinks = "Coffee";
         test.entertainment = "Band";
         String[] coupons = {"FreeDJ", "25Off"};
-        assertEquals(230, event.useCoupons(test, coupons));
+        assertEquals(5, event.useCoupons(test, coupons));
     }
 
 }
