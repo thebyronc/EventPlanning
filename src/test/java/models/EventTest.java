@@ -5,6 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class EventTest {
+
     @Test
     public void Event_checkUserResponse() {
         Event event = new Event();
@@ -25,5 +26,16 @@ public class EventTest {
         test.drinks = "Coffee";
         test.entertainment = "Band";
         assertEquals(3, event.getGuests(test));
+    }
+    @Test
+    public void Event_getFood() {
+        Event event = new Event();
+        Event test = new Event();
+        test.name = "Test Event Name";
+        test.guests = 3;
+        test.food = "Pizza";
+        test.drinks = "Coffee";
+        test.entertainment = "Band";
+        assertEquals("Pizza", event.getFood(test));
     }
 }
