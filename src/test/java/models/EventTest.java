@@ -80,6 +80,6 @@ public class EventTest {
         test.food = "Pizza";
         test.drinks = "Coffee";
         test.entertainment = "Band";
-        assertEquals(130, event.calculateCost(test));
+        assertEquals(230, event.calculateCost(test));
     }
 }

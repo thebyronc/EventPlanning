@@ -1,5 +1,8 @@
 package models;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class Event {
     public String name;
     public int guests;
@@ -31,8 +34,22 @@ public class Event {
         int guests = getGuests(event);
         String food = getFood(event);
         String drinks = getDrink(event);
-        int totalCost = 1;
-        return totalCost;
+        String entertainment = getEntertainment(event);
+        int totalCost = 0;
+        int entertainmentCost = 0;
+        //Food
+        if (!food.equals("no")) {
+            totalCost = totalCost + 8;
+        } else {}
+        //Drinks
+        if (!drinks.equals("no")) {
+            totalCost +=2;
+        } else {}
+        //Entertainment
+        if (!entertainment.equals("no")) {
+            entertainmentCost += 200;
+        } else {}
+        return totalCost*guests + entertainmentCost;
     }
     public static String checkUserResponse(String userInput) {
         String input = userInput.toLowerCase();
