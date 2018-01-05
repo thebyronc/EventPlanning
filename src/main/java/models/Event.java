@@ -19,6 +19,12 @@ public class Event {
         String drink = event.drinks;
         return drink;
     }
+    public static String getEntertainment(Event event) {
+        return "";
+    }
+    public static String getEventName(Event event) {
+        return "";
+    }
     public static String checkUserResponse(String userInput) {
         String input = userInput.toLowerCase();
         switch (input) {
