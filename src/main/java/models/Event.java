@@ -10,7 +10,7 @@ public class Event {
     public String food;
     public String drinks;
     public String entertainment;
-
+    public String[] validCoupons = {"FreeDJ", "25Off"};
     public static int getGuests(Event event) {
         int guests = event.guests;
         return guests;
@@ -62,5 +62,8 @@ public class Event {
             default:
                 return "Im sorry, I do not understand.";
         }
+    }
+    public static int useCoupons(Event event, String[] coupons) {
+        return 0;
     }
 }

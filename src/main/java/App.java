@@ -31,7 +31,12 @@ public class App {
                 event.entertainment = entertainment;
                 System.out.println("Your event " + Event.getEventName(event) + " will cost a total of: $" + Event.calculateCost(event));
 
-            } else {}
+
+            } else if (returnedInput.equals("no")){
+                System.out.println("It's ok, I don't like gatherings anyways.");
+            } else {
+                System.out.println(returnedInput);
+            }
 
         } catch (IOException e){
             e.printStackTrace();
