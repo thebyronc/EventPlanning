@@ -12,8 +12,8 @@ public class Event {
         return numberOfGuests;
     }
     public static String getFood(Event event) {
-
-        return "";
+        String food = event.food;
+        return food;
     }
     public static String checkUserResponse(String userInput) {
         String input = userInput.toLowerCase();
