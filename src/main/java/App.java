@@ -9,9 +9,9 @@ import models.Event;
 public class App {
     public static void main(String[] args) {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        Boolean intCheck = true;
-        Boolean responseCheck = true;
         while(true) {
+            Boolean intCheck = true;
+            Boolean responseCheck = true;
             int numberOfGuest = 0;
             System.out.println("Welcome to the Event Planning. Would you like to create a new event?");
             System.out.println("Yes, No");
@@ -54,7 +54,7 @@ public class App {
                         String couponQuestion = bufferedReader.readLine();
                         String returnedQuestion = Event.checkUserResponse(couponQuestion);
                         if (returnedQuestion.equals("yes")) {
-                            System.out.println("Enter your coupons separated by spaces:");
+                            System.out.println("Enter your coupons separated by spaces(Coupons Available: FreeDJ, 25Off):");
                             String coupons = bufferedReader.readLine();
                             String[] enteredCoupons = coupons.split(" ");
                             System.out.println("Your final total for the your event " + Event.getEventName(event) + " is $" + Event.useCoupons(event, enteredCoupons));

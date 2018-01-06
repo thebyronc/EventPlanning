@@ -73,6 +73,9 @@ public class Event {
                 totalCost -= 25;
             }
         }
+        if (totalCost <= 0){
+            totalCost = 0;
+        }
         return totalCost;
     }
 }
