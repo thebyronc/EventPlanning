@@ -41,15 +41,15 @@ public class Event {
         //Food
         if (!food.equals("no")) {
             totalCost = totalCost + 8;
-        } else {}
+        }
         //Drinks
         if (!drinks.equals("no")) {
             totalCost +=2;
-        } else {}
+        }
         //Entertainment
         if (!entertainment.equals("no")) {
             entertainmentCost += 200;
-        } else {}
+        }
         return totalCost*guests + entertainmentCost;
     }
     public static String checkUserResponse(String userInput) {
@@ -71,7 +71,7 @@ public class Event {
                 totalCost -= 200;
             } else if(coupons[i].equals("25Off")) {
                 totalCost -= 25;
-            } else {}
+            }
         }
         return totalCost;
     }
