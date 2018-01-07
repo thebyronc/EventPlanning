@@ -40,12 +40,8 @@ public class App {
                     System.out.println("What type of entertainment would you like to have at the event? If you prefer not to have entertainment enter 'no'.");
                     String entertainment = bufferedReader.readLine();
 
-                    Event event = new Event();
-                    event.name = eventName;
-                    event.guests = numberOfGuest;
-                    event.food = food;
-                    event.drinks = drinks;
-                    event.entertainment = entertainment;
+                    Event event = new Event(eventName, numberOfGuest, food, drinks, entertainment);
+
 
                     System.out.println("Your event " + Event.getEventName(event) + " will cost a total of: $" + Event.calculateCost(event));
 

@@ -5,12 +5,19 @@ import java.util.Arrays;
 import java.util.ArrayList;
 
 public class Event {
-    public String name;
-    public int guests;
-    public String food;
-    public String drinks;
-    public String entertainment;
+    private String name;
+    private int guests;
+    private String food;
+    private String drinks;
+    private String entertainment;
 
+    public Event(String eventName, int numberOfGuest, String food, String drinks, String entertainment) {
+        this.name = eventName;
+        this.guests = numberOfGuest;
+        this.food = food;
+        this.drinks = drinks;
+        this.entertainment = entertainment;
+    }
     public static int getGuests(Event event) {
         int guests = event.guests;
         return guests;
